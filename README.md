@@ -1,0 +1,5 @@
+I used two shaders: a swaying leaves shader and a specular rim shader.
+
+The former is to enhance the environmental props: trees, grass, leaves, and so on. It is created by modifying the position over time according to a wind direction and using a "Gradient Noise" to generate randomness. It is then readjusted according to UV y-position to make the effect more intense the further from the ground it is. It is built in ShaderGraph and is heavily inspired by the Brackeys "GRASS SWAY in Unity" shader.
+
+The latter is because of the aesthetics of the characters in this game. As an older arcade title, toon shaders look and feel really good in capturing the old-school aesthetic. However, the characters themselves don't quite look like they have typical harsh shadow fall offs. In fact, the characters look really shiny. The specular shader is intended to match the shininess and the additional rim allows for capturing the toon aesthetic. The blend creates a character that really looks and feels like a contra arcade character.
